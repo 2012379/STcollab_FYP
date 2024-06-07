@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Gigs</title>
+    <link rel="stylesheet" href="../styles/gigs.css" />
+  </head>
+  <div class="top-menu">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-1">
+        <div class="col-md-3 mb-2 mb-md-0">
+            <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <img src="../images/ST collab 2 black.png" alt="Logo" width="40" height="40" style="margin-left: 40px;">
+            </a>
+        </div>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="../html/home.html" class="nav-link px-2">Home</a></li>
+        <li><a href="../html/profile.html" class="nav-link px-2">Profile</a></li>
+        <li><a href="../html/solution.html" class="nav-link px-2">Solutions</a></li>
+        <li><a href="../html/research_papers.html" class="nav-link px-2">Research Pages</a></li>
+        <li><a href="../html/gigs.html" class="nav-link px-2">Gigs</a></li>
+        <li><a href="../html/myUploads.html" class="nav-link px-2">My Uploads</a></li>
+        <li><a href="../html/queries.html" class="nav-link px-2">Queries</a></li>
+        <li><a href="../html/createJoinRoom.html" class="nav-link px-2">Room</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <button type="button" id="logout" class="btn btn-outline-secondary me-2 logout-btn" id="logout">Logout</button>
+      </div>
+    </header>
+  </div>
+
+    <div class="title">
+      <span id="heading">
+        <h1>Gigs</h1>
+      </span>
+
+      <button id="post_btn" type="submit" onclick="openPopup()">
+        Post A Gig
+      </button>
+      <div class="popup" id="popup">
+        <form action="/Public/html/gigs.html" method="get" id="form">
+
+          <h1 style="color: #01858D;">Enter Details:</h1>
+          <div id="info">
+          <label for="gigname" style="color: black;">Gig Name:</label>
+          <input type="text" id="gigname" name="gigname" style="border: 2px solid #01858D; border-radius: 2px 2px 2px 2px;" /><br /><br />
+          <label for="aboutgig" style="color: black;">About:</label>
+          <input type="text" id="aboutgig" name="aboutgig" style="border: 2px solid #01858D; border-radius: 2px 2px 2px 2px;"/><br /><br />
+          <label for="qualification" style="color: black;">Qualification:</label>
+          <input type="text" id="qualification" name="qualification" style="border: 2px solid #01858D; border-radius: 2px 2px 2px 2px;"/><br /><br />
+          <label for="skills" style="color: black;">Required Skills:</label>
+          <input type="text" id="skills" name="skills" style="border: 2px solid #01858D; border-radius: 2px 2px 2px 2px;"/><br /><br />
+
+          <div><label for="gigfield" style="color: black;"> Choose Feild:</label>
+            <select name="gigfield" id="gigfield">
+            <option>Computer Science</option>
+            <option>Business</option>
+          </select>
+          </div><br /><br />
+          <div><label for="gigtype" style="color: black;"> Choose Type:</label>
+            <select name="gigtype" id="gigtype">
+            <option>Project</option>
+            <option>Research</option>
+          </select>
+          </div><br /><br />
+          <input type="hidden" id="username" name="username" value="" />
+          <input type="hidden" id="email" name="email" value="" />
+          <button
+            id="submit_btn"
+            type="submit"
+            value="Submit"
+            onclick="closePopup()"
+          >
+            Submit
+          </button>
+        </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="side-menu">
+      <ul style="list-style: none" >
+        <li>Feilds:</li>
+
+        <li>
+          <input type="checkbox" id = "all-field" class="field-checkbox" name="field" checked='true' /> All
+        </li>
+
+        <li>
+          <input type="checkbox" id = "computerScience" class="field-checkbox" name="field" /> Computer
+          Science
+        </li>
+
+        <li>
+          <input type="checkbox" id = "business" class="field-checkbox" name="field" /> Business
+        </li>
+      </ul>
+
+      <ul style="list-style: none">
+        <li>Filter:</li>
+
+        <li>
+          <input type="checkbox" id = "all-filter" class="filter-checkbox" name="field" checked ='true' /> All
+        </li>
+
+        <li>
+          <input type="checkbox" id = "projects" class="filter-checkbox" name="field" /> Projects
+        </li>
+
+        <li>
+          <input type="checkbox" id = "research" class="filter-checkbox" name="field" /> Research
+        </li>
+      </ul>
+    </div>
+
+    <div id="gigs">
+      <!-- Gigs' information will be dynamically added here -->
+    </div>
+
+    <script src="../scripts/gigs.js"></script>
+  </body>
+</html>
+

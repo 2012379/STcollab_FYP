@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.top-menu {
+    background-color: #01858D;
+    width: 100%;
+}
+
+.nav .nav-link {
+    color: white;  
+  }
+
+  .create {
+    background-color: #01858D; 
+    border-color: #01858D; 
+  }
+  .create:hover {
+    background-color: #016A72; 
+    border-color: #016A72; 
+  }
+
+  .logout-btn {
+    color: white; 
+    border-color: white; 
+  }
+
+  .logout-btn:hover{
+    background-color: white;
+    color: #01858D;
+  }
+
+#heading {
+    margin-top: 20px;
+    font-size: 40px;
+    color: #01858D;
+    text-align: center;
+}
+
+#ask {
+    height: 40px;
+    width : 78px;
+    float: right;
+    margin-top: -80px;
+    margin-right: 200px;
+}
+
+#ask_btn {
+    background-color: #01858D;
+    border: #01858D;
+    color: white;
+    height: 40px;
+    width: 78px;
+    border-radius: 4px 4px 4px 4px ;
+}
+
+.popup {
+    width: 600px;
+    background: white;
+    border: 2px solid #01858D;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 30px;
+    color: black;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s, left 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#submit, #close {
+    background-color: #01858D;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 78px;
+    border-radius: 4px;
+    margin-top: 10px; /* Added margin to separate buttons */
+}
+
+#any {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 10px; /* Added margin to separate the label from the textarea */
+}
+

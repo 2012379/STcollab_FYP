@@ -1,0 +1,38 @@
+.form-header {
+    color: #01858D;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+#des {
+    font-size: 20px;
+}
+
+#description {
+    width: calc(100% - 900px);
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #01858D;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#finish-btn {
+    clear: both;
+    float: right;
+    margin: 20px 10px;
+    margin-right: 900px;
+    padding: 10px 20px;
+    background-color: #01858D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #f0f0f0;
+}

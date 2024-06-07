@@ -1,0 +1,119 @@
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+.top-menu {
+    background-color: #01858D;
+    width: 100%;
+}
+
+.nav .nav-link {
+    color: white;  
+  }
+
+  .create {
+    background-color: #01858D; 
+    border-color: #01858D; 
+  }
+  .create:hover {
+    background-color: #016A72; 
+    border-color: #016A72; 
+  }
+
+  .logout-btn {
+    color: white; 
+    border-color: white; 
+  }
+
+  .logout-btn:hover{
+    background-color: white;
+    color: #01858D;
+  }
+
+.profile-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 80px;
+}
+
+.left-section {
+    width: 45%;
+    float: left;
+    margin-left: 50px;
+}
+
+.right-section {
+    flex: 1;
+    padding-left: 20px;
+    margin-right: 40px;
+}
+
+.text-fields .field {
+    margin-bottom: 20px;
+}
+
+.about-field textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid #01858D;
+}
+
+input[type="text"] {
+    width: calc(100% - 150px);
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #01858D;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#name {
+    margin-left: 64px;
+}
+
+#age {
+    margin-left: 79px;
+}
+
+#gender {
+    margin-left: 55px;
+}
+
+#profession{
+    margin-left: 34px;
+}
+
+#skills {
+    margin-left: 73px;
+}
+
+#qualification {
+    margin-left: 23px;
+}
+
+#linkedin {
+    margin-left: 17px;
+}
+#institute {
+    margin-left: 9px;
+}
+
+#about {
+    height: 400px;
+    width: 700px;
+}
+
+.profile-picture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#dp-logo{
+    height: 100px;
+    width: 100px;
+}

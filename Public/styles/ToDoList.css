@@ -1,0 +1,26 @@
+.top-menu {
+    background-color: #01858D;
+}
+
+.nav .nav-link {
+    color: white;  
+  }
+
+  .create {
+    background-color: #01858D; 
+    border-color: #01858D; 
+  }
+  .create:hover {
+    background-color: #016A72; 
+    border-color: #016A72; 
+  }
+
+  .logout-btn {
+    color: white; /* sets the text color to white */
+    border-color: white; /* sets the outline color to white */
+  }
+
+  .logout-btn:hover{
+    background-color: white;
+    color: #01858D;
+  }

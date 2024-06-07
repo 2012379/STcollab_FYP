@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.top-menu {
+  background-color: #01858D;
+  width: 100%;
+}
+
+.nav .nav-link {
+  color: white;  
+}
+
+.create {
+  background-color: #01858D; 
+  border-color: #01858D; 
+}
+.create:hover {
+  background-color: #016A72; 
+  border-color: #016A72; 
+}
+
+.logout-btn {
+  color: white; 
+  border-color: white; 
+}
+
+.logout-btn:hover{
+  background-color: white;
+  color: #01858D;
+}
+
+#heading {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #01858D;
+    text-align: center;
+}
+
+.upload_box{
+    border-right: 2px solid #01858D;
+    border-left: 2px solid #01858D;
+    border-top: 2px solid #01858D;
+    border-bottom: 2px solid #01858D;
+    height: 300px;
+    width: 800px;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#uh-btn {
+    margin-top: 150px;
+    color: #01858D;
+    font: bold;
+}
+
+.ask {
+    margin-top: 30px;
+    width: 800px;
+}
+
+#wrup, #feild {
+    color: #01858D;
+    font-weight: bold; 
+} 
+
+#up_btn {
+    height: 40px;
+    width : 78px;
+    float: right;
+    margin-top: -35px;
+}
+
+#upload_btn {
+    background-color: #01858D;
+    border: #01858D;
+    color: white;
+    height: 40px;
+    width: 78px;
+    border-radius: 4px 4px 4px 4px ;
+}
+
+#Sol, #Buss{
+    margin-left: 40px;
+}                   

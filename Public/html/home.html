@@ -1,0 +1,47 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/home.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <title>Home</title>
+</head>
+<body>
+  <div class="menu-bar">
+    <div class="logo">
+      <img id="logo" src="../images/ST collab 2 black.png" />
+    </div>
+    <div class="menu-options">
+      <div class="menu-item">Home</div>
+      <div class="menu-item"><a href="../html/profile.html">Profile</a></div>
+      <div class="menu-item"><a href="../html/solution.html">Solutions</a></div>
+      <div class="menu-item"><a href="../html/research_papers.html">Research Pages</a></div>
+      <div class="menu-item"><a href="../html/upload.html">Upload</a></div>
+      <div class="menu-item"><a href="../html/queries.html">Queries</a></div>
+      <div class="menu-item"><a href="../html/gigs.html">Gigs</a></div>
+      <div class="menu-item"><a href="../html/myUploads.html">My Uploads</a></div>
+      <div class="menu-item"><a href="../html/createJoinRoom.html">Room</a></div>
+      <div class="menu-item" id="logout">
+        <i class="fas fa-sign-out-alt"></i>Logout
+      </div>
+    </div>
+  </div>
+
+  <img id="logo-main" src="../images/ST collab 2.png" />
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search..." id="searchInput" />
+    <button id="searchButton"><i class="fas fa-search"></i></button>
+  </div>
+
+  <div class="content">
+    <div id="solutionFiles"></div>
+    <div id="researchFiles"></div>
+    <div id="queries"></div>
+  </div>
+
+  <script src="../scripts/home.js"></script>
+</body>
+</html>
